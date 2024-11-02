@@ -3,25 +3,49 @@
       {
         "display_name": "Checking Account",
         "type": "bank account",
-        "properties": ["Available Balance: $216.04"]
+        "properties": [
+          {
+            "property_name": "Available Balance",
+            "value": "$216.04"
+          }
+        ]
       },
       {
         "display_name": "Saving Account",
         "type": "bank account",
-        "properties": ["Available Balance: $230.00"]
+        "properties": [
+          {
+            "property_name": "Available Balance",
+            "value": "$230.00"
+          }
+        ]
       },
       {
         "display_name": "Upcoming Transfers",
         "type": "transfer list",
-        "properties": ["None"]
+        "properties": [
+          {
+            "property_name": "Transfers",
+            "value": "None"
+          }
+        ]
       },
       {
         "display_name": "Upcoming Bills",
         "type": "bill list",
         "properties": [
-          "Streamwave Videos - $6.99 | 12/01/2024",
-          "Streamwave Videos - $6.99 | 01/01/2025",
-          "Streamwave Videos - $6.99 | 02/01/2025"
+          {
+            "property_name": "Bill 1",
+            "value": "Streamwave Videos - $6.99 | 12/01/2024"
+          },
+          {
+            "property_name": "Bill 2",
+            "value": "Streamwave Videos - $6.99 | 01/01/2025"
+          },
+          {
+            "property_name": "Bill 3",
+            "value": "Streamwave Videos - $6.99 | 02/01/2025"
+          }
         ]
       }
     ],
@@ -30,57 +54,95 @@
         "action": "View Checking Account",
         "entity": "Checking Account",
         "sequence": [
-          {"tool": "mouse_move", "position": [x, y]},  // Position to hover over "View Account" for Checking Account
-          {"tool": "left_click"}
+          {
+            "tool": "mouse_move",
+            "position": [100, 200]
+          },
+          {
+            "tool": "left_click"
+          }
         ]
       },
       {
         "action": "View Saving Account",
         "entity": "Saving Account",
         "sequence": [
-          {"tool": "mouse_move", "position": [x, y]},  // Position to hover over "View Account" for Saving Account
-          {"tool": "left_click"}
+          {
+            "tool": "mouse_move",
+            "position": [300, 200]
+          },
+          {
+            "tool": "left_click"
+          }
         ]
       },
       {
         "action": "View Transfers",
         "entity": "Upcoming Transfers",
         "sequence": [
-          {"tool": "mouse_move", "position": [x, y]},  // Position to hover over "View Transfers"
-          {"tool": "left_click"}
+          {
+            "tool": "mouse_move",
+            "position": [150, 300]
+          },
+          {
+            "tool": "left_click"
+          }
         ]
       },
       {
         "action": "View Bills",
         "entity": "Upcoming Bills",
         "sequence": [
-          {"tool": "mouse_move", "position": [x, y]},  // Position to hover over "View Bills"
-          {"tool": "left_click"}
+          {
+            "tool": "mouse_move",
+            "position": [150, 400]
+          },
+          {
+            "tool": "left_click"
+          }
         ]
       },
       {
         "action": "Change Date",
         "entity": "Calendar",
         "sequence": [
-          {"tool": "mouse_move", "position": [x, y]},  // Position to hover over calendar icon in top-right
-          {"tool": "left_click"},
-          {"tool": "type", "text": "MM/DD/YYYY"}      // Typing or selecting the new date
+          {
+            "tool": "mouse_move",
+            "position": [600, 50]
+          },
+          {
+            "tool": "left_click"
+          },
+          {
+            "tool": "type",
+            "text": "11/03/2024"
+          }
         ]
       },
       {
         "action": "Access Notifications",
         "entity": "Notifications",
         "sequence": [
-          {"tool": "mouse_move", "position": [x, y]},  // Position to hover over notifications icon
-          {"tool": "left_click"}
+          {
+            "tool": "mouse_move",
+            "position": [650, 50]
+          },
+          {
+            "tool": "left_click"
+          }
         ]
       },
       {
         "action": "Access Account Menu",
         "entity": "Account",
         "sequence": [
-          {"tool": "mouse_move", "position": [x, y]},  // Position to hover over account icon in top-right
-          {"tool": "left_click"}
+          {
+            "tool": "mouse_move",
+            "position": [700, 50]
+          },
+          {
+            "tool": "left_click"
+          }
         ]
       }
     ]
