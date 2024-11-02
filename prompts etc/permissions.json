@@ -1,0 +1,38 @@
+{
+    "permissions": {
+      "View Checking Account": "allowed",
+      "View Saving Account": "allowed",
+      "View Transfers": "allowed",
+      "View Bills": "denied",
+      "Change Date": "allowed",
+      "Access Notifications": "allowed",
+      "Access Account Menu": "allowed"
+    },
+    "workflow": [
+      {
+        "action": "View Transfers",
+        "sequence": [
+          {
+            "tool": "mouse_move",
+            "position": [150, 300]
+          },
+          {
+            "tool": "left_click"
+          }
+        ]
+      },
+      {
+        "action": "View Bills",
+        "sequence": [
+          {
+            "tool": "mouse_move",
+            "position": [150, 400]
+          },
+          {
+            "tool": "left_click"
+          }
+        ]
+      }
+    ]
+  }
+  
